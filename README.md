@@ -1,7 +1,12 @@
-# Image-Colorizatin-VCS2425
-Repository containing project of A.A 24/25 of Vision and Cognitive System (VCS). 
+# Fine-Tuning Stable Diffusion with LoRA for Colorization
+Repository containing project of A.A 24/25 of Vision and Cognitive System (VCS).\\
+Members: Brigo Marco, Boraso Francesco, Pantaleo Fabio.\\
+\\
+The project involved fine-tuning a pre-trained Stable Diffusion model to accomplish Colorization task using LoRA technique.\\
+In the Colorization task what we aim to do, is to give as input a gray image and colorize it, giving colors that resemble (ideally the same) its ground truth.\\
+We crafted our RGB dataset based on Imagenette (full version), captioning images using BLIP model and removing black and white images. During training process we only trained the LoRA weights regarding the UNet of the model, freezing its pre-trained VAE and text encoder. Captions of the images were passed to the UNet as text embeddings properly encoded.\\
 
-Stable Diffusion model implementation: [link](https://colab.research.google.com/drive/1ho_aifd52ZXC-ZpxooWCcD9_8GR32auf?usp=sharing)
-
-
-PixelRNN implementation: [link](https://colab.research.google.com/drive/1FM8C8Ukp93OcK2eHwrLCLOb4sHFm7U6f?usp=sharing)
+Dataset: Imagenette-full
+Models: 
+- stabilityai 
+- BLIP
