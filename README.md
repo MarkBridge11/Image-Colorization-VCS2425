@@ -18,3 +18,6 @@ We crafted our RGB dataset based on Imagenette (full version), captioning images
 **Models:**
 - Stable-diffusion-2-1: https://huggingface.co/stabilityai/stable-diffusion-2-1
 - blip-image-captioning-large: https://huggingface.co/Salesforce/blip-image-captioning-large
+
+**Main reference paper**
+- Diffusing Colors: Image Colorization with Text Guided Diffusion: https://arxiv.org/pdf/2312.04145
